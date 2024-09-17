@@ -1,5 +1,5 @@
 let express = require("express");
-const { mainRoutes } = require("../../main.routes");
+const { mainRoutes } = require("../../mainRoutes");
 let homePageRoute=express.Router();
 
 homePageRoute.get('/slider',(req,res)=>{
