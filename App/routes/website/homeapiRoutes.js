@@ -1,9 +1,10 @@
 let express = require("express");
-const { mainRoutes } = require("../../mainRoutes");
+const { slider,product } = require("../../controller/website/homeController");
+
 let homePageRoute=express.Router();
 
-homePageRoute.get('/slider',(req,res)=>{
-    res.send("Welcome to Home page slider API")
-})
+homePageRoute.get('/slider',slider)
+
+homePageRoute.get('/product',product)
 
 module.exports ={homePageRoute}
